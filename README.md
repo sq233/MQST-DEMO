@@ -32,58 +32,58 @@ Arguments:  -jar D:\deploy\lib\yuicompressor-2.4.8.jar --type js --charset UTF-8
 配置完成，尝试改变下js文件或css文件内容，若有新的min.js生成或min.css生成就证明配置成功啦~！
 
 ## 文件结构说明
->Application<br>
->  >Common<br>
->  >  >View<br>
->  >      >Sq<br>
->  >           >base.tpl.html<br>
->  >           > （基础模版）<br>
->  >           >footer.tpl.html<br>
->  >           > （底部模版：需要在页面底部引入的文件可以添加在这里）<br>
->  >           >header.tpl.html<br>
->  >           > （头部模版：需要在页面头部引入的文件或meta可以添加在这里）<br>
->  >           >js_var.tpl.html<br>
->  >              （常量传递模版：用于将PHP中的模版常量传递至JS变量）<br>
->  >Sq<br>
->     ├ Common<br>
->     │    ├ BaseController.class.php<br>
->     │    │  （基控制器）<br>
->     │    └ function.php<br>
->     │        （公共函数库）<br>
->     ├ Conf<br>
->     │   ├ config.php<br>
->     │   │  （主配置文件）<br>
->     │   ├ db.php<br>
->     │   │  （发布版数据库配置文件）<br>
->     │   ├ sq_config.php<br>
->     │   │  （发布版配置文件）<br>
->     │   ├ test_db.php<br>
->     │   │  （测试版数据库配置文件）<br>
->     │   └ test_sq_config.php<br>
->     │       （测试版配置文件）<br>
->     ├ Controller<br>
->     │   ├ CommonController.class.php<br>
->     │   │  （公共控制器）<br>
->     │   ├ IndexController.class.php<br>
->     │   │  （首页控制器）<br>
->     │   ├ DemoController.class.php<br>
->     │   │  （Demo控制器）<br>
->     │   ├ LoginController.class.php<br>
->     │   │  （登录控制器）<br>
->     │   └ AddressController.class.php<br>
->     │       （选择地址控制器）<br>
->     └ View<br>
->          ├ Public<br>
->          │  （公共视图模版文件目录）<br>
->          ├ Index<br>
->          │  （首页视图模版文件目录）<br>
->          ├ Demo<br>
->          │  （Demo视图模版文件目录）<br>
->          ├ Login<br>
->          │  （登录视图模版文件目录）<br>
->          └ Address<br>
->              （选择地址视图模版文件目录）<br>
->Public<br>
+Application<br>
+  ├ Common<br>
+  │   └ View<br>
+  │      └ Sq<br>
+  │           ├ base.tpl.html<br>
+  │           │  （基础模版）<br>
+  │           ├ footer.tpl.html<br>
+  │           │  （底部模版：需要在页面底部引入的文件可以添加在这里）<br>
+  │           ├ header.tpl.html<br>
+  │           │  （头部模版：需要在页面头部引入的文件或meta可以添加在这里）<br>
+  │           └ js_var.tpl.html<br>
+  │              （常量传递模版：用于将PHP中的模版常量传递至JS变量）<br>
+  └ Sq<br>
+     ├ Common<br>
+     │    ├ BaseController.class.php<br>
+     │    │  （基控制器）<br>
+     │    └ function.php<br>
+     │        （公共函数库）<br>
+     ├ Conf<br>
+     │   ├ config.php<br>
+     │   │  （主配置文件）<br>
+     │   ├ db.php<br>
+     │   │  （发布版数据库配置文件）<br>
+     │   ├ sq_config.php<br>
+     │   │  （发布版配置文件）<br>
+     │   ├ test_db.php<br>
+     │   │  （测试版数据库配置文件）<br>
+     │   └ test_sq_config.php<br>
+     │       （测试版配置文件）<br>
+     ├ Controller<br>
+     │   ├ CommonController.class.php<br>
+     │   │  （公共控制器）<br>
+     │   ├ IndexController.class.php<br>
+     │   │  （首页控制器）<br>
+     │   ├ DemoController.class.php<br>
+     │   │  （Demo控制器）<br>
+     │   ├ LoginController.class.php<br>
+     │   │  （登录控制器）<br>
+     │   └ AddressController.class.php<br>
+     │       （选择地址控制器）<br>
+     └ View<br>
+          ├ Public<br>
+          │  （公共视图模版文件目录）<br>
+          ├ Index<br>
+          │  （首页视图模版文件目录）<br>
+          ├ Demo<br>
+          │  （Demo视图模版文件目录）<br>
+          ├ Login<br>
+          │  （登录视图模版文件目录）<br>
+          └ Address<br>
+              （选择地址视图模版文件目录）<br>
+Public<br>
   ├ css<br>
   │ ├ mqst.css<br>
   │ │  （全局通用定义样式）<br>
