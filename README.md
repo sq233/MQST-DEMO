@@ -34,8 +34,8 @@ Arguments:  -jar D:\deploy\lib\yuicompressor-2.4.8.jar --type js --charset UTF-8
 ## 文件结构说明
 Application<br>
   ├ Common<br>
-  │   └ View<br>
-  │      └ Sq<br>
+  │    └ View<br>
+  │        └ Sq<br>
   │           ├ base.tpl.html<br>
   │           │  （基础模版）<br>
   │           ├ footer.tpl.html<br>
