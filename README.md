@@ -20,14 +20,14 @@ MQST（Mobile Quick Simple To Thinkphp）是基于THINKPHP3.2框架之上的一�
 （2）添加 YUI Compressor JS<br>
 在 Edit Watcher 窗口中，在 Program 位置参数设置为 [JAVA安装位置中javaw文件位于的路径]\javaw.exe，在 Arguments 位置参数设置为 -jar [yuicompressor文件位置的路径]\yuicompressor-2.4.8.jar --type js --charset UTF-8 $FileName$ -o $FileNameWithoutExtension$.min.js<br>
 
-例如（我的配置）：
-YUI Compressor CSS
-Program:    C:\Program Files (x86)\Java\jre1.8.0_121\bin\javaw.exe
-Arguments:  -jar D:\deploy\lib\yuicompressor-2.4.8.jar --type css --charset UTF-8 $FileName$ -o $FileNameWithoutExtension$.min.css
+例如（我的配置）：<br>
+YUI Compressor CSS<br>
+Program:    C:\Program Files (x86)\Java\jre1.8.0_121\bin\javaw.exe<br>
+Arguments:  -jar D:\deploy\lib\yuicompressor-2.4.8.jar --type css --charset UTF-8 $FileName$ -o $FileNameWithoutExtension$.min.css<br>
 
-YUI Compressor JS
-Program:    C:\Program Files (x86)\Java\jre1.8.0_121\bin\javaw.exe
-Arguments:  -jar D:\deploy\lib\yuicompressor-2.4.8.jar --type js --charset UTF-8 $FileName$ -o $FileNameWithoutExtension$.min.js
+YUI Compressor JS<br>
+Program:    C:\Program Files (x86)\Java\jre1.8.0_121\bin\javaw.exe<br>
+Arguments:  -jar D:\deploy\lib\yuicompressor-2.4.8.jar --type js --charset UTF-8 $FileName$ -o $FileNameWithoutExtension$.min.js<br>
 
 配置完成，尝试改变下js文件或css文件内容，若有新的min.js生成或min.css生成就证明配置成功啦~！
 
