@@ -33,18 +33,18 @@ Arguments:  -jar D:\deploy\lib\yuicompressor-2.4.8.jar --type js --charset UTF-8
 
 ## 文件结构说明
 >Application<br>
->  >>Common<br>
->  >>  >>>View<br>
->  >>      >>>>Sq<br>
->  >>           >>>>>base.tpl.html<br>
->  >>           >>>>> （基础模版）<br>
->  >>           >>>>>footer.tpl.html<br>
->  >>           >>>>> （底部模版：需要在页面底部引入的文件可以添加在这里）<br>
->  >>           >>>>>header.tpl.html<br>
->  >>           >>>>> （头部模版：需要在页面头部引入的文件或meta可以添加在这里）<br>
->  >>           >>>>>js_var.tpl.html<br>
->  >>              （常量传递模版：用于将PHP中的模版常量传递至JS变量）<br>
->  >>Sq<br>
+>  >Common<br>
+>  >  >View<br>
+>  >      >Sq<br>
+>  >           >base.tpl.html<br>
+>  >           > （基础模版）<br>
+>  >           >footer.tpl.html<br>
+>  >           > （底部模版：需要在页面底部引入的文件可以添加在这里）<br>
+>  >           >header.tpl.html<br>
+>  >           > （头部模版：需要在页面头部引入的文件或meta可以添加在这里）<br>
+>  >           >js_var.tpl.html<br>
+>  >              （常量传递模版：用于将PHP中的模版常量传递至JS变量）<br>
+>  >Sq<br>
 >     ├ Common<br>
 >     │    ├ BaseController.class.php<br>
 >     │    │  （基控制器）<br>
