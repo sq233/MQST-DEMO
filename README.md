@@ -18,7 +18,7 @@ MQST（Mobile Quick Simple To Thinkphp）是基于THINKPHP3.2框架之上的一�
 （1）添加 YUI Compressor CSS<br>
 在 Edit Watcher 窗口中，在 Program 位置参数设置为 [JAVA安装位置中javaw文件位于的路径]\javaw.exe，在 Arguments 位置参数设置为 -jar [yuicompressor文件位置的路径]\yuicompressor-2.4.8.jar --type css --charset UTF-8 $FileName$ -o $FileNameWithoutExtension$.min.css<br>
 （2）添加 YUI Compressor JS<br>
-在 Edit Watcher 窗口中，在 Program 位置参数设置为 [JAVA安装位置中javaw文件位于的路径]\javaw.exe，在 Arguments 位置参数设置为 -jar D:\deploy\lib\yuicompressor-2.4.8.jar --type js --charset UTF-8 $FileName$ -o $FileNameWithoutExtension$.min.js<br>
+在 Edit Watcher 窗口中，在 Program 位置参数设置为 [JAVA安装位置中javaw文件位于的路径]\javaw.exe，在 Arguments 位置参数设置为 -jar [yuicompressor文件位置的路径]\yuicompressor-2.4.8.jar --type js --charset UTF-8 $FileName$ -o $FileNameWithoutExtension$.min.js<br>
 
 配置完成，尝试改变下js文件或css文件内容，若有新的min.js生成或min.css生成就证明配置成功啦~！
 
