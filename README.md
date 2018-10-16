@@ -2,10 +2,10 @@
 MQST（Mobile Quick Simple To Thinkphp）是基于THINKPHP3.2框架之上的一个移动端架构解决方案，可流畅运行于几乎市面上所有的手机浏览器，亦可内嵌于APP中，对于需要频繁更新功能活动的APP来说也是个不错的选择。
 
 ## 开发环境
-1、将配置DOMAIN_PATH的值改成你部署的项目域名或IP<br>
-2、将项目放置到网站根目录即可访问<br>
-3、建议使用phpstorm作为本项目的开发工具<br>
-4、如果配置MODULE_COMPRESSION_MODE设置为1的话，则使用的是混淆压缩版的min.js与min.css文件，否则直接使用源文件<br>
+1、将配置DOMAIN_PATH的值改成你部署的项目域名或IP；<br>
+2、将项目放置到网站根目录即可访问；<br>
+3、建议使用phpstorm作为本项目的开发工具；<br>
+4、如果配置MODULE_COMPRESSION_MODE=1的话，则加载的是混淆压缩版的min.js与min.css文件，否则直接加载源文件；<br>
 
 ## 关于如何使用phpstorm实现自动压缩JS与CSS文件
 ### 安装java
