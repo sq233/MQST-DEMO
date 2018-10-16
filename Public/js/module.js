@@ -1015,18 +1015,23 @@ function custom_demo_infinite_test4_infinite_flow(infinite_obj,list,index) {
     var item = $(list[index]);
     infinite_obj.append(item);
     if(flow_left <= flow_right) {
-        item.css({'margin-top': flow_left}).velocity({left: 0, 'margin-top': flow_left}, {'easing': 'linear','duration': 100,'complete':function(){
-            flow_left += item.height() + margin_bottom;
-            infinite_obj.attr('data-left',flow_left);
-            setTimeout(function(){custom_demo_infinite_test4_infinite_flow(infinite_obj,list,index+1);},150);
-        }});
+        item.css({left: 0, 'margin-top': flow_left});
     } else {
-        item.css({'margin-top': flow_right}).velocity({right: 0, 'margin-top': flow_right}, {'easing': 'linear','duration': 100,'complete':function(){
-            flow_right += item.height() + margin_bottom;
-            infinite_obj.attr('data-right',flow_right);
-            setTimeout(function(){custom_demo_infinite_test4_infinite_flow(infinite_obj,list,index+1);},150);
-        }});
+        item.css({right: 0, 'margin-top': flow_right});
     }
+
+    item.find('.card-cover').get(0).onload = function() {
+        var item_height = item.height();    //必须等图片加载完成以后才能获取item的高度
+        if(flow_left <= flow_right) {
+            flow_left += item_height + margin_bottom;
+            infinite_obj.attr('data-left',flow_left);
+        } else {
+            flow_right += item_height + margin_bottom;
+            infinite_obj.attr('data-right',flow_right);
+        }
+
+        custom_demo_infinite_test4_infinite_flow(infinite_obj,list,index+1);
+    };
 }
 
 function custom_demo_infinite_test4_infinite_flow_finish(infinite_obj,index) {
@@ -1550,18 +1555,23 @@ function custom_demo_inline_test3_infinite_inline5_flow(infinite_obj,list,index)
     var item = $(list[index]);
     infinite_obj.append(item);
     if(flow_left <= flow_right) {
-        item.css({'margin-top': flow_left}).velocity({left: 0, 'margin-top': flow_left}, {'easing': 'linear','duration': 100,'complete':function(){
-            flow_left += item.height() + margin_bottom;
-            infinite_obj.attr('data-left',flow_left);
-            setTimeout(function(){custom_demo_inline_test3_infinite_inline5_flow(infinite_obj,list,index+1);},150);
-        }});
+        item.css({left: 0, 'margin-top': flow_left});
     } else {
-        item.css({'margin-top': flow_right}).velocity({right: 0, 'margin-top': flow_right}, {'easing': 'linear','duration': 100,'complete':function(){
-            flow_right += item.height() + margin_bottom;
-            infinite_obj.attr('data-right',flow_right);
-            setTimeout(function(){custom_demo_inline_test3_infinite_inline5_flow(infinite_obj,list,index+1);},150);
-        }});
+        item.css({right: 0, 'margin-top': flow_right});
     }
+
+    item.find('.card-cover').get(0).onload = function() {
+        var item_height = item.height();    //必须等图片加载完成以后才能获取item的高度
+        if(flow_left <= flow_right) {
+            flow_left += item_height + margin_bottom;
+            infinite_obj.attr('data-left',flow_left);
+        } else {
+            flow_right += item_height + margin_bottom;
+            infinite_obj.attr('data-right',flow_right);
+        }
+
+        custom_demo_inline_test3_infinite_inline5_flow(infinite_obj,list,index+1);
+    };
 }
 
 function custom_demo_inline_test3_infinite_inline5_flow_finish(infinite_obj,index) {
