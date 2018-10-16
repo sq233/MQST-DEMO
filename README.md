@@ -8,20 +8,20 @@ MQST（Mobile Quick Simple To Thinkphp）是基于THINKPHP3.2框架之上的一�
 4、如果配置MODULE_COMPRESSION_MODE设置为1的话，则使用的是混淆压缩版的min.js与min.css文件，否则直接使用源文件<br>
 
 ## 关于如何使用phpstorm实现自动压缩JS与CSS文件
-安装java
-下载地址：https://www.java.com/zh_CN/
+### 安装java
+下载地址：https://www.java.com/zh_CN/<br>
 安装教程参考：http://jingyan.baidu.com/article/f96699bb8b38e0894e3c1bef.html
 
-YUI Compressor
-下载地址: https://github.com/yui/yuicompressor/releases/download/v2.4.8/yuicompressor-2.4.8.zip
+### YUI Compressor
+下载地址: https://github.com/yui/yuicompressor/releases/download/v2.4.8/yuicompressor-2.4.8.zip<br>
 设置 File Watchers，打开 File -> Settings -> Tools -> File Watchers 中添加 YUI Compressor CSS 和 YUI Compressor JS
-（1）添加 YUI Compressor CSS
+####（1）添加 YUI Compressor CSS
 在 Edit Watcher 窗口中，在 Program 位置参数设置为 [JAVA安装位置中javaw文件位于的路径]\javaw.exe，在 Arguments 位置参数设置为 -jar [yuicompressor文件位置的路径]\yuicompressor-2.4.8.jar --type css --charset UTF-8 $FileName$ -o $FileNameWithoutExtension$.min.css
-（2）添加 YUI Compressor JS
+####（2）添加 YUI Compressor JS
 在 Edit Watcher 窗口中，在 Program 位置参数设置为 [JAVA安装位置中javaw文件位于的路径]\javaw.exe，在 Arguments 位置参数设置为 -jar D:\deploy\lib\yuicompressor-2.4.8.jar --type js --charset UTF-8 $FileName$ -o $FileNameWithoutExtension$.min.js
 
 配置完成，尝试改变下js文件或css文件内容，若有新的min.js生成或min.css生成就证明配置成功啦~！
 
 ## 讨论
-![](https://github.com/sq233/MQST-DEMO/raw/master/Public/images/public/qq_group_qr.jpg)  
+![](https://github.com/sq233/MQST-DEMO/raw/master/Public/images/public/qq_group_qr.jpg "技术交流群")  
 
