@@ -32,7 +32,7 @@ Arguments:  -jar D:\deploy\lib\yuicompressor-2.4.8.jar --type js --charset UTF-8
 配置完成，尝试改变下js文件或css文件内容，若有新的min.js生成或min.css生成就证明配置成功啦~！
 
 ## 演示
-![](https://github.com/sq233/MQST-DEMO/raw/master/Public/images/public/demo_qr.png "MQST-DEMO")
+![](https://github.com/sq233/MQST-DEMO/raw/master/Public/images/public/demo_qr.png "MQST-DEMO") 
 
 ## 讨论
 ![](https://github.com/sq233/MQST-DEMO/raw/master/Public/images/public/qq_group_qr.jpg "技术交流群")
