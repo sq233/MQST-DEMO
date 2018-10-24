@@ -3,7 +3,7 @@ MQST（Mobile Quick Simple To Thinkphp）是基于THINKPHP3.2框架之上的一�
 
 ## 开发环境
 1、将配置DOMAIN_PATH的值改成你部署的项目域名或IP；<br>
-2、将项目放置到网站根目录即可访问；<br>
+2、将项目放置到网站根目录即可访问（该项目可直接使用，在IndexController里面直接添加你的代码即可）；<br>
 3、建议使用phpstorm作为本项目的开发工具；<br>
 4、如果配置MODULE_COMPRESSION_MODE=1的话，则加载的是混淆压缩版的min.js与min.css文件，否则直接加载源文件；<br>
 
